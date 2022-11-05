@@ -2,4 +2,4 @@
 - Adcionar Lint</br>
 - Docker</br>
 - ApiFirst
-- Git
+- Git(melhorar o .gitignore)
