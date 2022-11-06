@@ -3,3 +3,4 @@
 - Docker</br>
 - ApiFirst
 - Git(melhorar o .gitignore)
+- Adicção de Logs

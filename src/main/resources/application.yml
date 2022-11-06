@@ -1,0 +1,4 @@
+
+openapi:
+  sample:
+    base-path: /v1
