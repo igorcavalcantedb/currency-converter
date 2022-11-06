@@ -1,6 +1,8 @@
 package com.eurosys.converter.repository.util;
 
-public class Body {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class AwesomeApiBody {
     private String code;
     private String codein;
     private String name;
@@ -11,7 +13,8 @@ public class Body {
     private String bid;
     private String ask;
     private String timestamp;
-    private String create_date;//TODO @json create_date
+    @JsonProperty("create_date")
+    private String createDate;
 
     public String getCode() {
         return code;
@@ -93,12 +96,12 @@ public class Body {
         this.timestamp = timestamp;
     }
 
-    public String getCreate_date() {
-        return create_date;
+    public String getCreateDate() {
+        return createDate;
     }
 
-    public void setCreate_date(String create_date) {
-        this.create_date = create_date;
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
     }
 
     @Override
@@ -114,7 +117,7 @@ public class Body {
                 ", bid='" + bid + '\'' +
                 ", ask='" + ask + '\'' +
                 ", timestamp='" + timestamp + '\'' +
-                ", create_date='" + create_date + '\'' +
+                ", create_date='" + createDate + '\'' +
                 '}';
     }
 }
