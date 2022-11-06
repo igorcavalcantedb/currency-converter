@@ -4,3 +4,5 @@
 - ApiFirst
 - Git(melhorar o .gitignore)
 - Adicção de Logs
+- Melhorar os objetos rate
+- Mapear usando Gson

@@ -34,4 +34,9 @@ public  class Scrapper {
         Currency currency = new Currency("",code,null);
         return getCurrency(currency).getValue().toString();
     }
+    public static BigDecimal getCurrencyBig(String code){
+        Currency currency = new Currency("",code,null);
+        return getCurrency(currency).getValue();
+    }
+
 }

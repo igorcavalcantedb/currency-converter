@@ -6,10 +6,48 @@ info:
 servers:
   - url: 'https://api.example.com'
 paths:
-  /users:
+  /open-api/v1/get-rate/{code}:
     get:
-      summary: Returns a list of users.
-      description: Optional extended description in Markdown.
+      tags:
+        - "OpenApi-Get-rate"
+      summary: Returns the value of rate for a currency.
+      description: vale of rate against of US dollar
+      operationId: getRate
+      parameters:
+        - in: path
+          name: code
+          required: true
+          description: Code of
+          schema:
+            type: string
       responses:
         '200':
-          description: OK
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rate'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Rate'
+        '400':
+          description: Invalid CODE supplied
+        '404':
+          description: CODE not found
+components:
+  schemas:
+    Rate:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        code:
+          type: string
+          example: BRL
+        value:
+          type: string
+          example: 0.130
+      xml:
+        name: rate
