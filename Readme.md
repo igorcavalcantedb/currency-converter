@@ -1,8 +1,11 @@
 1- Todo : </br>
 - Adcionar Lint - 
-- Docker -
+- Docker +
 - ApiFirst +
+- Documentação Swagger (http://localhost:8080/swagger-ui.html#/OpenApi-Get-rate)
+- Resolver swagger para versao atual do spring
 - Git(melhorar o .gitignore) +-
 - Adicção de Logs +/-
 - Melhorar os objetos rate +
 - Realizar Teste unitários -
+- Port and Adpters
