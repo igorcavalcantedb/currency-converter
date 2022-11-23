@@ -25,8 +25,8 @@ public class OpenApiConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Compasso UOL -  REST API")
-                .description("Aplicação Spring Boot REST API")
+                .title("Currency converter -  REST API")
+                .description("Microservice responsible for getting the current quote of a currency")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
