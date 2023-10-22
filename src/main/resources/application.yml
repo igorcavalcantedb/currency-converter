@@ -1,4 +1,6 @@
-
+spring:
+  application:
+    name: converter
 openapi:
   sample:
     base-path: /v1
